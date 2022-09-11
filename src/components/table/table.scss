@@ -1,0 +1,34 @@
+.table{
+    .cellWrapper{
+        display: flex;
+        align-items: center;
+
+        .image{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .status{
+        padding: 5px;
+        border-radius: 5px;
+
+        &.EMERGENCY{
+            color:red;
+            background-color: rgba(0, 128, 0,0.151);
+        }
+
+        &.IN-PATIENT{
+            color: green;
+            background-color: rgba(0, 128, 0,0.151);
+        }
+
+        &.OUT-PATIENT{
+            color: blue;
+            background-color: rgba(0, 128, 0,0.151);
+        }
+    }
+}
